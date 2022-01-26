@@ -35,7 +35,7 @@ class FragmentChange : Fragment(R.layout.fragment_change) {
                 return@setOnClickListener
             }
 
-            if (oldPassword.isEmpty()|| newPassword.isEmpty()) {
+            if (oldPassword.isEmpty()) {
                 Toast.makeText(this@FragmentChange.requireContext(), "Enter password", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
